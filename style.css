@@ -1,0 +1,476 @@
+
+/* ========================================
+   CONFIGURAÇÕES GERAIS
+======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 75px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f7fb;
+    color: #263445;
+    line-height: 1.6;
+}
+
+
+/* ========================================
+   MENU DE NAVEGAÇÃO
+======================================== */
+
+.navbar {
+    background-color: #0b1f3a !important;
+    padding: 15px 0;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+}
+
+.navbar-brand {
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff !important;
+    margin-left: 8px;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #58a6ff !important;
+}
+
+
+/* ========================================
+   APRESENTAÇÃO INICIAL
+======================================== */
+
+.hero {
+    min-height: 420px;
+    padding: 120px 0 70px;
+    background: linear-gradient(120deg, #0b1f3a, #174a7e);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+}
+
+.hero-text {
+    max-width: 850px;
+}
+
+.hero-tag {
+    color: #58a6ff;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 13px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    font-weight: bold;
+    margin: 18px 0;
+    color: #ffffff;
+}
+
+.hero h1 span {
+    color: #58a6ff;
+}
+
+.hero h2 {
+    font-size: 23px;
+    color: #d6e4f5;
+    margin-bottom: 18px;
+}
+
+.hero p {
+    color: #e6efff;
+    font-size: 17px;
+    max-width: 650px;
+}
+
+
+/* ========================================
+   BOTÕES GITHUB E LINKEDIN
+======================================== */
+
+.social-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.btn-github,
+.btn-linkedin {
+    display: inline-block;
+    padding: 11px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn-github {
+    background-color: #ffffff;
+    color: #0b1f3a;
+    border: 2px solid #ffffff;
+}
+
+.btn-github:hover {
+    background-color: transparent;
+    color: #ffffff;
+    transform: translateY(-3px);
+}
+
+.btn-linkedin {
+    background-color: #0a66c2;
+    color: #ffffff;
+    border: 2px solid #0a66c2;
+}
+
+.btn-linkedin:hover {
+    background-color: #084d92;
+    border-color: #084d92;
+    color: #ffffff;
+    transform: translateY(-3px);
+}
+
+
+/* ========================================
+   CARROSSEL
+======================================== */
+
+.carousel-section {
+    background-color: #0b1f3a;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    background-color: rgba(5, 20, 40, 0.78);
+    border-radius: 12px;
+    padding: 20px;
+    bottom: 35px;
+}
+
+.carousel-caption h2,
+.carousel-caption h3 {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.carousel-caption p {
+    color: #e6efff;
+    margin-bottom: 0;
+}
+
+
+/* ========================================
+   SEÇÕES
+======================================== */
+
+section {
+    scroll-margin-top: 80px;
+}
+
+.section {
+    padding: 80px 0;
+}
+
+.section-light {
+    background-color: #eaf0f7;
+}
+
+.section-title {
+    text-align: center;
+    color: #0b1f3a;
+    font-size: 34px;
+    font-weight: bold;
+    margin-bottom: 45px;
+}
+
+.section-title::after {
+    content: "";
+    display: block;
+    width: 65px;
+    height: 4px;
+    background-color: #2878c7;
+    margin: 14px auto 0;
+    border-radius: 5px;
+}
+
+section h2 {
+    color: #0b1f3a;
+    font-weight: bold;
+}
+
+section h3 {
+    color: #174a7e;
+    font-weight: bold;
+}
+
+section h4 {
+    color: #174a7e;
+}
+
+
+/* ========================================
+   SOBRE MIM
+======================================== */
+
+.about-box {
+    max-width: 1000px;
+    margin: auto;
+    background-color: #ffffff;
+    padding: 35px;
+    border-radius: 14px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+    font-size: 17px;
+}
+
+.about-box p:last-child {
+    margin-bottom: 0;
+}
+
+/* FOTO PEQUENA E CIRCULAR */
+
+.about-photo {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    border: 4px solid #1769aa;
+    box-shadow: 0 5px 18px rgba(11, 31, 58, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.about-photo:hover {
+    transform: scale(1.05);
+}
+
+
+/* ========================================
+   CARDS
+======================================== */
+
+.info-card {
+    height: 100%;
+    border: none;
+    border-radius: 12px;
+    background-color: #ffffff;
+    padding: 30px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.06);
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(11, 31, 58, 0.15);
+}
+
+.info-card h3 {
+    color: #174a7e;
+    font-size: 21px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.info-card p {
+    color: #586879;
+}
+
+.info-card ul {
+    padding-left: 20px;
+    margin-bottom: 0;
+}
+
+.info-card li {
+    margin-bottom: 8px;
+}
+
+.project-card {
+    border-top: 4px solid #58a6ff;
+}
+
+
+/* ========================================
+   LISTAS
+======================================== */
+
+.list-group-item {
+    border-color: #e5edf5;
+    padding: 12px 15px;
+}
+
+
+/* ========================================
+   BOTÕES GERAIS
+======================================== */
+
+.btn-primary {
+    background-color: #1769aa;
+    border-color: #1769aa;
+    border-radius: 8px;
+    padding: 10px 22px;
+    transition: background-color 0.3s ease,
+                transform 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0b1f3a;
+    border-color: #0b1f3a;
+    transform: translateY(-2px);
+}
+
+
+/* ========================================
+   CONTATO
+======================================== */
+
+.contact-section {
+    background: linear-gradient(120deg, #0b1f3a, #174a7e);
+    color: #ffffff;
+    padding: 75px 0;
+}
+
+.contact-section h2 {
+    color: #ffffff;
+    font-size: 34px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.contact-section p {
+    color: #d7e5f4;
+    font-size: 17px;
+}
+
+.contact-section .social-buttons {
+    justify-content: center;
+}
+
+
+/* ========================================
+   LINKS
+======================================== */
+
+a {
+    color: #1769aa;
+}
+
+a:hover {
+    color: #0b1f3a;
+}
+
+
+/* ========================================
+   RODAPÉ
+======================================== */
+
+footer {
+    background-color: #0b1f3a !important;
+    color: #ffffff;
+    text-align: center;
+    padding: 25px 10px;
+}
+
+footer p {
+    color: #d6e4f5;
+    margin: 5px 0;
+}
+
+
+/* ========================================
+   RESPONSIVIDADE
+======================================== */
+
+@media (max-width: 768px) {
+
+    .hero {
+        min-height: auto;
+        padding: 110px 20px 60px;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero h2 {
+        font-size: 19px;
+    }
+
+    .hero p {
+        margin: auto;
+    }
+
+    .social-buttons {
+        justify-content: center;
+    }
+
+    .carousel-item img {
+        height: 300px;
+    }
+
+    .carousel-caption {
+        padding: 10px;
+        bottom: 20px;
+    }
+
+    .carousel-caption h2,
+    .carousel-caption h3 {
+        font-size: 18px;
+    }
+
+    .carousel-caption p {
+        font-size: 12px;
+    }
+
+    .navbar-nav .nav-link {
+        margin-left: 0;
+        padding: 10px 0;
+    }
+
+    .section {
+        padding: 55px 15px;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+
+    .about-box {
+        padding: 25px;
+        text-align: center;
+    }
+
+    .about-photo {
+        width: 135px;
+        height: 135px;
+    }
+
+    .info-card {
+        padding: 25px;
+    }
+
+    .contact-section h2 {
+        font-size: 28px;
+    }
+
+}
