@@ -19,7 +19,7 @@ O portfólio reúne informações sobre minha formação em Desenvolvimento de S
 
 ## Link do site publicado
 
-A publicar no GitHub Pages.
+https://hiferreira.github.io/portfolio-rayane/?utm_source=chatgpt.com
 
 ## Funcionamento do projeto
 
